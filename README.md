@@ -1,4 +1,4 @@
-[rwasa](https://2ton.com.au/rwasa/) is a full-featured, high performance, scalable web server. It's written in x86_64 with no external library dependencies.
+This image is based on the latest [rwasa](https://2ton.com.au/rwasa/) http server.
 
 Run the container, binding a directory to serve from to `/var/www`.
 
