@@ -3,7 +3,7 @@
 
 FROM alpine AS builder
 
-ENV FASM_VERSION 1.73.08
+ENV FASM_VERSION 1.73.09
 ENV HEAVYTHING_VERSION 1.24
 
 RUN apk --update --no-cache add binutils curl && \
