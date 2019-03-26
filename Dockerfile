@@ -11,7 +11,7 @@ CMD ["/bin/bash"]
 ENV FASM_VERSION 1.73.09
 ENV HEAVYTHING_VERSION 1.24
 
-RUN yum update -y add binutils curl && \
+RUN yum update -y install binutils curl && \
 	curl -sL "https://flatassembler.net/fasm-$FASM_VERSION.tgz" | tar xz && \
 	ln -s /fasm/fasm /bin/fasm
 
