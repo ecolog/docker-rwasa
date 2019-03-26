@@ -2,8 +2,8 @@
 # build
 
 FROM scratch
-MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-ADD oraclelinux-7-slim-rootfs.tar.xz /
+MAINTAINER Ubuntu Linux Product Team <vofkav@gmail.com>
+ADD ubuntu-16.04-minimal-cloudimg-amd64-root.tar.xz /
 
 # overwrite this with 'CMD []' in a dependent Dockerfile
 CMD ["/bin/bash"]
@@ -11,7 +11,7 @@ CMD ["/bin/bash"]
 ENV FASM_VERSION 1.73.09
 ENV HEAVYTHING_VERSION 1.24
 
-RUN yum update -y install binutils curl && \
+RUN apt-get --update --no-cache add binutils curl && \
 	curl -sL "https://flatassembler.net/fasm-$FASM_VERSION.tgz" | tar xz && \
 	ln -s /fasm/fasm /bin/fasm
 
