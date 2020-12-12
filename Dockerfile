@@ -2,8 +2,8 @@
 # build
 
 FROM scratch
-MAINTAINER Ubuntu Linux Product Team <vofkav@gmail.com>
-ADD ubuntu-16.04-minimal-cloudimg-amd64-root.tar.xz /
+MAINTAINER Oracle Linux 7 slim <vofkav@gmail.com>
+ADD oraclelinux-7-slim-rootfs.tar.xz /
 
 # overwrite this with 'CMD []' in a dependent Dockerfile
 CMD ["/bin/bash"]
